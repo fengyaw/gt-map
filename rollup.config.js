@@ -1,3 +1,4 @@
+import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
@@ -10,6 +11,7 @@ const plugins = [
     exclude: 'node_modules/**'
   }),
   nodeResolve(),
+  commonjs(),
 ]
 
 // 如果不是开发环境，开启压缩
