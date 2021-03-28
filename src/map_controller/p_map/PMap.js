@@ -1,5 +1,5 @@
 
-const {PMarker, PPolyline, PRectangle, PPolygon, PCircle, PSector} = require("./PShapes.js")
+import {PMarker, PPolyline, PRectangle, PPolygon, PCircle, PSector} from "./PShapes.js"
 /**
  * 图片地图类
  */

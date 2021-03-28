@@ -1,11 +1,11 @@
 
-const {PMap, PMarker, PPolyline, PRectangle, PPolygon, PCircle, PSector} = require("./p_map/PMap.js")
-const _SectorUtil = require("./b_map/_SectorUtil.js")
+import {PMap, PMarker, PPolyline, PRectangle, PPolygon, PCircle, PSector} from "./p_map/PMap.js"
+import _SectorUtil from "./b_map/_SectorUtil.js"
 
 /**
  * 地图控件视图类
  */
-export class MapController {
+export default class MapController {
 
   // 构造器
   constructor(mapModel, mapType) {

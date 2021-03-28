@@ -1,7 +1,7 @@
 /**
  * 百度地图扇形工具类
  */
-export class _SectorUtil {
+export default class _SectorUtil {
   // 构造器
   constructor(option, map) {
     this.map = map;
@@ -44,7 +44,7 @@ export class _SectorUtil {
   _getEditMarker(center, radius, type, degree, callBack) {
     let point = this._getCurvePoint(center, radius, degree);
     let marker = new BMap.Marker(point, { enableDragging: true, enableMassClear: false });
-    let myIcon = new BMap.Icon(require('@/assets/images/map/icon/circle.png'), new BMap.Size(15, 15), {
+    let myIcon = new BMap.Icon(require('utils/circle.png'), new BMap.Size(15, 15), {
       imageSize: new BMap.Size(15, 15)
     });
     let eventArray = [

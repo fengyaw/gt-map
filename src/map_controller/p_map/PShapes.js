@@ -1,5 +1,5 @@
 
-const POverlay = require("./POverlay.js")
+import POverlay from "./POverlay.js"
 
 /**
  * 图片地图标记物类

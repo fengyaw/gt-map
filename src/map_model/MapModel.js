@@ -1,7 +1,7 @@
 /**
  * 地图控件模型类
  */
-export class MapModel {
+export default class MapModel {
 
   // 构造器
   constructor(data) {
